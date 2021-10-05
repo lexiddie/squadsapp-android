@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "replace-your-api-key",
+    "firebase_url": "replace-your-api-key",
+    "project_id": "replace-your-api-key",
+    "storage_bucket": "replace-your-api-key"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "replace-your-api-key",
+        "android_client_info": {
+          "package_name": "replace-your-api-key"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "replace-your-api-key",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "replace-your-api-key"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

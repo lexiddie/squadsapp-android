@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical">
+    <android.support.v7.widget.CardView
+            app:cardBackgroundColor="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+            <TextView
+                    android:id="@+id/txtCountry"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/noto_sans"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="39.5dp"
+                    android:gravity="center_vertical|left"
+                    tools:ignore="RtlHardcoded" />
+            <View
+                    android:background="@color/colorTextBorder"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

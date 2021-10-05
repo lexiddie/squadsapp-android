@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".controller.CountryController">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorWhite"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+        <Button
+                android:onClick="handleDismiss"
+                android:background="@drawable/arrow_left"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                tools:ignore="RtlHardcoded" />
+        <TextView
+                android:text="@string/select_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/noto_sans_bold"
+                android:textColor="@color/colorBlack"
+                android:textSize="19sp" />
+        <View
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorTextBorder"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+    </RelativeLayout>
+    <TextView
+            android:fontFamily="@font/noto_sans_bold"
+            android:textColor="@color/colorBlack"
+            android:textSize="17sp"
+            android:gravity="left|center_vertical"
+            android:text="@string/all_countries"
+            android:layout_marginStart="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" tools:ignore="RtlHardcoded"/>
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/handleCountryView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

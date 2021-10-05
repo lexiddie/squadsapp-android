@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:background="@color/colorWhite"
+             tools:context=".controller.NavigateController">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" tools:ignore="UselessParent">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorWhite"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                tools:ignore="UselessParent">
+            <Button
+                    android:id="@+id/handleRequesting"
+                    android:text="@string/requesting"
+                    android:fontFamily="@font/noto_sans_bold"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    android:background="@color/colorWhite"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" tools:ignore="ButtonStyle"/>
+            <Button
+                    android:id="@+id/handleNotification"
+                    android:text="@string/notifications"
+                    android:fontFamily="@font/noto_sans_bold"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    android:background="@color/colorWhite"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" tools:ignore="ButtonStyle"/>
+        </LinearLayout>
+        <View
+                android:background="@color/colorTextBorder"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+        <FrameLayout
+                android:id="@+id/navigateFrame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

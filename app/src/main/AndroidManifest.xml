@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.squadsapp">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+            android:allowBackup="false"
+            android:icon="@drawable/logo"
+            android:label="@string/app_name"
+            android:roundIcon="@drawable/logo"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".controller.MemberRequestController">
+        </activity>
+        <activity android:name=".controller.TripRequestController">
+        </activity>
+        <activity android:name=".controller.InspectProfileController">
+        </activity>
+        <activity android:name=".controller.PreviewLocationController">
+        </activity>
+        <activity android:name=".controller.AnnouncementController">
+        </activity>
+        <activity android:name=".controller.LoginController">
+        </activity>
+        <activity android:name=".controller.PrivateInfoController">
+        </activity>
+        <activity android:name=".controller.EditProfileController">
+        </activity>
+        <activity android:name=".controller.ChangeCountryController">
+        </activity>
+        <activity android:name=".controller.ChangePasswordController">
+        </activity>
+        <activity android:name=".controller.TripInfoController">
+        </activity>
+        <activity android:name=".controller.CreateTripController">
+        </activity>
+        <activity android:name=".controller.CountryController">
+        </activity>
+        <activity
+                android:name=".controller.TabBarController"
+                android:label="@string/title_activity_tab_bar_controller">
+        </activity>
+        <activity android:name=".controller.SetupProfileController">
+        </activity>
+        <activity android:name=".controller.SetupPasswordController">
+        </activity>
+        <activity android:name=".controller.SignUpController">
+        </activity>
+        <activity
+                android:name=".controller.MainController"
+                android:noHistory="true"
+                android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <meta-data
+                android:name="com.google.android.geo.API_KEY"
+                android:value="AIzaSyAmw82sw6Wbw24bDTnHNhNAHcDfn8htyB0"/>
+        <meta-data
+                android:name="preloaded_fonts"
+                android:resource="@array/preloaded_fonts"/>
+    </application>
+
+</manifest>
